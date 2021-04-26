@@ -1,38 +1,210 @@
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+.navbarStyle {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+  background-color: #3dc4fc;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.navIcon {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  width: 33px;
   pointer-events: none;
+  margin-top: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeContainer {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeContainer h1 {
+  color: black;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.homeContainer p {
+  color: gray;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  margin-top: -15px;
+  margin-right: 40px;
+  line-height: 20px;
+}
+
+.homeLink {
+  text-decoration: none;
+}
+
+.homeImgStyle {
+  width: 100vw;
+}
+
+.allBeersSearchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.allBeersSearchbar {
+  margin-top: 70px;
+}
+
+.allBeersContainer {
+  width: 100vw;
+  height: 590vh;
+  /* margin-top: -60px; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.allBeersMapContainer {
+  padding: 5px 0 30px 10px;
+  margin-left: 40px;
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 110px;
+  z-index: 1;
+}
+
+.allBeersBorder {
+  width: 100vw;
+  border: 1px solid rgb(198, 198, 198);
+  margin: -115px 0;
+}
+
+.allBeersLinkStyle {
+  text-decoration: none;
+}
+
+.allBeersMargin {
+  margin-left: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+}
+
+.allBeersName {
+  font-size: 36px;
+  color: black;
+}
+
+.allBeersTagline {
+  font-size: 26px;
+  color: rgb(114, 114, 114);
+}
+
+.allBeersCreator {
+  color: black;
+  position: relative;
+  bottom: 10px;
+}
+
+.newBeerContainer {
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.randomBeerContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.allBeersPics {
+  width: 60px;
+}
+
+.beerDetailsImg {
+  width: 100px;
+}
+
+.beerDetailsImgContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.beerDetailsContainer {
+  padding: 20px;
+}
+
+.containEverythingUnderImg {
+  margin-top: 30px;
+}
+
+.beerDetailsNameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beerDetailsName {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.beerDetailsAttenuation {
+  color: rgb(172, 172, 172);
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.beerDetailsTaglineContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beerDetailsTagline {
+  margin-bottom: 15px;
+  color: rgb(172, 172, 172);
+  margin-left: 5px;
+}
+
+.beerDetailsBrewed {
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.beerDetailsDescription {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.beerDetailsCreator {
+  margin-top: 15px;
+  margin-left: 5px;
+  color: rgb(155, 152, 152);
+  font-weight: 500;
+}
+
+.nameForm {
+  margin-top: 100px;
+}
+
+.formContainer {
+  margin-top: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
